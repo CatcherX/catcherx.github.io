@@ -2,9 +2,23 @@
 <html lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-	<title></title>
+	<title>CatcherX For Github.</title>
+	<script type="text/javascript" src="http://lib.sinaapp.com/js/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript">
+        !window.jQuery && document.write('<script src=http://code.jquery.com/jquery-1.11.1.min.js><\/script>');
+    </script>
+    <script>
+        $(document).ready(function () {
+            $.post("http://aspspider.info/CatcherXue0/Handler/ajaxhandler.ashx?key=CatcherX", { //发布后改为服务器所在的地址
+                meno: new Date()
+            },
+		    function (data, status) {
+		        console.log(data,status);
+		    });
+        });
+    </script>
 </head>
 <body>
-	<script type="text/javascript">alert('hello,world.')</script>
+	<h1>hey,hey,Welcome!</h1>
 </body>
 </html>
