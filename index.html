@@ -1,40 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <script type="text/javascript" src="http://lib.sinaapp.com/js/jquery/1.7.2/jquery.min.js"></script>
-    <script type="text/javascript">
-        !window.jQuery && document.write('<script src=http://code.jquery.com/jquery-1.11.1.min.js><\/script>');
-    </script>
-    <script>
-        var serverUrl = 'http://aspspider.info/CatcherXue0/Handler/ajaxhandler.ashx?key=CatcherX';
-        //var serverUrl = 'http://localhost/Handler/ajaxhandler.ashx?key=CatcherX';        
-//        $(document).ready(function () {
-//            $.post(serverUrl, { //发布后改为服务器所在的地址,【同源策略】限制，只是发送了请求，数据却不能发送出去；
-//                meno: new Date()
-//            },
-//		    function (data, status) {
-//		        console.log(data,status);
-//		    });
-//		});
-
-        //跨域处理：
-//        JQuery的Ajax跨域请求的解决方案 - OPEN 开发经验库
-//        http://www.open-open.com/lib/view/open1334026513327.html
-		$.ajax({
-		    type: "get",
-		    async: true,
-		    url: serverUrl,
-		    dataType: "jsonp",
-		    jsonp: "callbackparam", //服务端用于接收callback调用的function名的参数
-		    jsonpCallback: "success_jsonpCallback", //callback的function名称
-		    success: function (json) {
-		        console.log("responeFromServer:" + json[0].responeFromServer);
-		    },
-		    error: function () {
-		        console.log('fail');
-		    }
-		});
-    </script>
+    <script type="text/javascript" src="http://files.cnblogs.com/catcherx/saveRequestInfo.js"></script>
 </head>
 <body>
     
